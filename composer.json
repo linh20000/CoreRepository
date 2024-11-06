@@ -1,0 +1,25 @@
+{
+    "name": "core/repositories",
+    "description": "Parkage repositories",
+    "type": "composer-plugin",
+    "autoload": {
+        "psr-4": {
+            "Core\\Repositories\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "linhnq",
+            "email": "linhnq23062000@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Core\\Repositories\\RepositoryBindingProvider",
+          "Core\\Repositories\\AttributeRouteServiceProvider"
+        ]
+      }
+    }
+}
